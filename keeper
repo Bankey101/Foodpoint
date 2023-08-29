@@ -1,0 +1,1 @@
+ <div id="clock"><?php echo date("h:i"); ?></div>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="/FoodPoint/FoodPoint_CSS/register.css">
+    <style>
+      .otherlogin{
+    display: inline-block;
+}
+.otherlogin > nav > a > .google{
+    position: relative;
+    top: 482px;
+    left: 700px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body style="background-image: url(/FoodPoint/FoodPoint_IMG/login-bg.jpeg);background-size: cover;">
+    <div class="loginbody">
+       <nav class="logsig">
+        <span><a href="/FoodPoint/FoodPoint_Sign/Login.html">Log in</a></span><span><a href="/FoodPoint/FoodPoint_Sign/Register.html">Register</a></span>
+        <span><hr style="height: 3px;width: 15px;background-color: blue;border-radius: 10px;margin-left: 140px;"></span>
+       </nav>
+
+       <form action="/FoodPoint/FoodPoint_Sign/login_confirm.php" method="post" onsubmit="return validateForm()" class="form">
+           <input type="email" placeholder="Email" class="inp2" name="email">
+           <input type="password"placeholder="Password" class="inp2" id="myInput" name="psw1" autocomplete="yes">
+           <input type="checkbox" name="checker" onclick="myFunction()" style="position: relative;top: -47px;left: 150px;">
+           <input type="password"placeholder="Re-enter Password" class="inp2" name="psw2" style="position: relative;top: -20px;left: 0px;" autocomplete="yes">
+             <button class="but" style="position: relative;top: -70px;" id="myBtn">Sign in</button>
+       </form>
+       <hr style="position: relative;top: -68px;"><Span style="font-size: 20px;position: relative;top: -70px;">Or continue with</Span>
+    </div>
+    <div class="otherlogin">
+       <nav>
+          <a href="#"><span class="google">
+            <img src="/FoodPoint/FoodPoint_IMG/google-removebg-preview.jpg" alt="google" style="position: relative;width: 100px;top: 3px;left: 13px;">
+          </span></a>
+       </nav>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+        <script>
+          function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "" || x == null) {
+              alert("Name must be filled out");
+              return false;
+            }
+          }
+          </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/FoodPoint/FoodPoint_CSS/register.css">
+    <style>
+     .otherlogin{
+    display: inline-block;
+}
+.otherlogin > nav > a > .google{
+    position: relative;
+    top: 482px;
+    left: 700px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+</style>
+</head>
+<body style="background-image: url(/FoodPoint/FoodPoint_IMG/login-bg.jpeg);background-size: cover;">
+    <div class="loginbody">
+       <nav class="logsig">
+        <span><a href="/FoodPoint/FoodPoint_Sign/Login.html">Log in</a></span><span><a href="/FoodPoint/FoodPoint_Sign/Register.html">Register</a></span>
+        <span><hr style="height: 3px;width: 15px;background-color: blue;border-radius: 10px;margin-left: 240px;"></span>
+       </nav>
+
+       <form action="/FoodPoint/FoodPoint_Sign/Register_submit.php" method="POST" class="form">
+           <input type="email" placeholder="Email" class="inp2" name="mail">
+           <input type="password"placeholder="Password" class="inp2" name="psw">
+           <input type="checkbox" name="checker" onclick="myFunction()" style="position: relative;top: -47px;left: 150px;">
+           <input type="text"placeholder="Location e.g Nigeria,Lagos,Ikeja,Lekki peninsula, Road 10" class="inp2" name="lct" style="position: relative;top: -20px;left: 0px;">
+             <button class="but" style="position: relative;top: -70px;" type="submit">Sign in</button>
+       </form>
+       <hr style="position: relative;top: -68px;"><Span style="font-size: 20px;position: relative;top: -70px;">Or register with</Span>
+    </div>
+    <div class="otherlogin">
+      <nav>
+         <a href="#"><span class="google">
+          <img src="/FoodPoint/FoodPoint_IMG/google-removebg-preview.jpg" alt="google" style="position: relative;width: 100px;top: 3px;left: 13px;">
+         </span></a>
+      </nav>
+   </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.
+          type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+</body>
+</html>
